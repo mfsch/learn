@@ -1,0 +1,221 @@
+<!DOCTYPE html>  
+<html>
+<head>
+	
+  <meta charset="utf-8">
+  <title>Variables – The Missing Textbook</title>
+  <link rel="stylesheet" href=style.css>
+
+</head>
+
+<body>
+  <header>
+    <nav class=clearfix>
+      <ul class=clearfix>
+        <li><a href=index.html>Courses</a></li>
+	<li><a href=reference.html>References</a></li>
+	<li><a href=/about>About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="page">
+    
+    
+
+
+<style>
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<h1>Variables</h1>
+
+  <div class=snippet>
+    <div class=text>
+      <p>Variables are the computer’s short-term memory while executing the program. With the use of variables, we can tell the computer to remember a piece of information and refer to it later in the program. We do that by giving it a name. This is very similar to names we give to people. Instead of saying “my coworker, you know the one who has two dogs and likes to play basketball” every time, we mention their name the first time we talk about them and refer to them as “Alice“ or “Bob” next time we talk about them.</p>
+      <a href="/programming/variables/assignment">Expand for more on how to assign variables.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>There are many things we can compare variables to, e.g. labeled folders or variables in mathematics. The important part is that we tell the computer to remember a piece of information using a certain name. The computer then knows that whenever we use this name, we actually mean the corresponding piece of information. The complexity of the piece of information can range from a simple yes/no to the business logic of a large corporation and much more.</p>
+      <a href="/programming/variables/concept">Expand for more explainations of the concept.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>The reason we want the information to be remembered can vary as well. Sometimes we simply want to use the information in several different commands, sometimes we want to work on the information and change and expand it throughout the program.</p>
+      <a href="/programming/variables/use-cases">Expand for more on use cases.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>In theory, we could  have one single type of variable and deep down in the memory of the computer that’s actually the case. However, if we group them into different types, we can work with them more easily and naturally. If we let the computer know, that a variable is a number, we can tell it to subtract it from an other number and it knows what to do. Likewise, we can ask for the third value of a list or the first name of a person if the computer knows that a variable represents a list of values or information about a person. Also, if the computer knows the type of the variable, the information can be stored and accessed in an optimized, efficient way.</p>
+<p>Programming languages define a certain number of basic types of variables that are general enough that they occur in most programs. In Python, these types are numbers, text, yes/no values and collections or lists of other variables.</p>
+<p>In a lot of languages including Python, we can then combine these types into more complex types of variables, so-called objects, that can represent information of arbitrary complexity. We can define these types on our own or use types that other people have defined by telling the computer to refer to their definitions. The only difference in the use of  the basic types and more complex ones is that we don’t have to state the type of basic variables explicitley. Instead, we imply the type in the way we express the information, e.g. we use square brackets and commas to indicate a list and quotes to indicate text.</p>
+      <a href=types.html>Expand for more on different types of variables.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>There are a few details that we need to be aware of when we use variables, as we might run into problems if we don’t know about them:</p>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>We have seen that a variable is a name for a piece of information. This means that a variable has two parts: The information itself and the name we give it. The computer stores the information of the variable in one place. Then, the name of the variable along with the information where to find the content is stored seperately.</p>
+<p>If we define a variable as being equal to a different variable, we actually don’t duplicate the variable, but rather create a new name for the same piece of information. If we now change the first variable, the second variable changes as well, because they both refer to the same piece of information.</p>
+<p>In Python, this is only relevant for more complex variables, as simple variables (numbers, yes/no values and text) can’t be changed. We have the illusion of changing them sometimes, e.g. if we add 2 to a number, but what Python does in this case is delete the old variable and create a new one.</p>
+      <a href="/programming/variables/references">Expand for more on how references are resolved.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>Another point to be aware of is the concept of namespaces. As we can imagine, a large project might get very complex and it is hard to always know which name has been used where. That’s why variable names are only valid within the context where they are defined, i.e. if a variable is defined within a function, it can only be accessed from within the function. Usually this naming behaves exactly as we expect and we don’t need to give this a lot of thought, but sometimes it is helpful to have a clear understanding of when a variable name is valid and when it is not, especially if the same name is used in different places.</p>
+      <a href="/programming/variables/namespaces">Expand for more on scope and namespaces.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>This is basically what there is to know about variables. Variables are one of the basic building blocks of programs and there is hardly a line of code where no variable is used. That’s why a solid understanding of them is a good base for becoming a good programmer.</p>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+
+  </div>
+  
+</body>
+</html>

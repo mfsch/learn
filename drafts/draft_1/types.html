@@ -1,0 +1,164 @@
+<!DOCTYPE html>  
+<html>
+<head>
+	
+  <meta charset="utf-8">
+  <title>Types of Variables – The Missing Textbook</title>
+  <link rel="stylesheet" href=style.css>
+
+</head>
+
+<body>
+  <header>
+    <nav class=clearfix>
+      <ul class=clearfix>
+        <li><a href=index.html>Courses</a></li>
+	<li><a href=reference.html>References</a></li>
+	<li><a href=/about>About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="page">
+    
+    
+
+
+<style>
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<h1>Types of Variables</h1>
+
+  <div class=snippet>
+    <div class=text>
+      <p>The most basic types of variables are numbers, yes/no values and text. We can write values of those variables directly in the code and these values are called “literals”. All of these cannot be mutated.</p>
+<p>Let’s look at numbers first, as they are perhaps the most natural type of variables. A number can be written directly in the code, including a decimal point and a minus sign in front of them, but may not contain other formatting like spaces or quotes. The main distinction to be made is between “integers” (full numbers without decimal part) and “floats” (numbers with a decimal part). Internally, these are two different types and in some cases this distinction is important, e.g. it wouldn’t make sense for the computer to find the 3.9th letter of a word. Usually, however, we don’t need to worry about this difference, because the numbers are automatically converted when this is necessary. When we write numbers, all numbers with a decimal point are treated as floats, so if we want to specify that a number should be treated as a float, we can just add “.0” at the end, i.e. instead of 1 we write 1.0. There is also a type for the mathematical concept of complex numbers.</p>
+      <a href="/programming/variables/types/number">Extend for more on numbers.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>Another basic type of variable is the so-called boolean value. This is a simple on/off, true/false or yes/no value. In the code, we can write them as True and False, where the capitalization is important. Internally they are the same as the integers 1 and 0 and we can use these numbers whenever we would use True or False, but using the words makes our code easier to read and understand.</p>
+      <a href="/programming/variables/types/bool">Extend for more on boolean values.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>The third basic type of variable is any kind of text, commonly referred to as “string”. We mark them by using quotes at the beginning and at the end of the text. We can use single or double quotes, as long as we use the same type of quotes at both ends. If we use three single or double quotes at both ends, the text can span across multiple lines. If the text itself contains quotes, we have to use the other type of quotes as delimiter or mark the quotes within the text with a backslash \ before them, so the computer doesn’t interpret them as the end of the string.  While most mathematical operations don’t make sense for strings, there is a range of other functions we can use to process them.</p>
+      <a href="/programming/variables/types/string">Extend for more on strings.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class=snippet>
+    <div class=text>
+      <p>We can combine different variables into a single variable using one of the variable types for collections of variables.</p>
+<p>The basic collection is the “list”, which is denoted using square brackets and uses comma as delimiters between the elements. The elements of a list can be any kind of variable and a list may even contain other lists. We can access and change elements of a list individually, we can sort them and, maybe most importantly, we can cycle over them using a for-loop.</p>
+<p>The list has a brother called “tuple”, which is identical to the list, except that it is immutable, so once it is defined it can’t be changed anymore. Tuples are denoted with regular parentheses instead of square brackets. [1-element tuples]</p>
+<p>Both lists and tuples are an ordered collection of variables, where ordered doesn’t mean sorted, but rather that their order is well-defined. As such, they can be indexed. This means, that we can write a number in square brackets behind the variable name and we get the element corresponding to the number. These index numbers start with zero for the first element and then go up naturally, so if we want the sixth element, we use “[5]” as the index.</p>
+<p>The last of the basic types is the dictionary. It is similar to the list, but instead of being ordered and having a number as index, the elements have a name as index. The name can be anything including a number and the element can be any kind of variable type. Dictionaries can be written in the code similar to lists, but using curly brackets instead of square brackets and writing “key:value” instead of just the element, where “key” is the name of the index and “value” is the element that corresponds to this key.</p>
+      <a href="/programming/variables/types/collection">Expand for more on collections.</a>
+      <aside class=more>
+        <div class=icon>?</div>
+        <div class=info>
+          <h3>Authors</h3>
+          <ul>
+            <li>Manuel Schmid</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+
+  </div>
+  
+</body>
+</html>
